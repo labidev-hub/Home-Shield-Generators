@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login / Signup</h2>
+
+        <div id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button onclick="login()">Sign In</button>
+
+            <div class="signup-link">
+              <a href="#" onclick="showSignupForm()">Create Account</a>
+            </div>
+        </div>
+
+        <div id="signup-form">
+            <label for="new-username">Username:</label>
+            <input type="text" id="new-username" name="new-username" required>
+
+            <label for="new-password">Password:</label>
+            <input type="password" id="new-password" name="new-password" required>
+
+            <button onclick="signup()">Sign Up</button>
+
+            <div class="signin-link">
+              <a href="#" onclick="showLoginForm()">Already have an account? Sign In</a>
+            </div>
+        </div>
+
+        <div id="error-message" class="error-message"></div>
+
+    </div>
+    
+</body>
+</html>
